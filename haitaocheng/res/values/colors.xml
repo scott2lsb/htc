@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md__defaultBackground">#ff555555</color>
+    <color name="yellow">#ffff8f02</color>
+    <color name="black">#ff000000</color>
+    <color name="translucent_black">#55544e4d</color>
+    <color name="white">#ffffffff</color>
+    
+</resources>

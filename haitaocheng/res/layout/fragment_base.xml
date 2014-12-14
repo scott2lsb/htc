@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+	    	android:id="@+id/layout_topTab"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40.0dip"
+	        android:orientation="horizontal"
+	        android:visibility="visible"
+	        android:weightSum="1.0" 
+	        >
+	
+	        <Button
+	            android:id="@+id/button0"
+	            style="@+style/style_buttons"
+	            android:layout_weight="0.25"
+	            android:text="季特惠"
+	            android:textColor="@+color/yellow" />
+	
+	        <Button
+	            android:id="@+id/button1"
+	            style="@+style/style_buttons"
+	            android:layout_weight="0.25"
+	            android:text="促销品"
+	            android:textColor="@+color/black" />
+	
+	        <Button
+	            android:id="@+id/button2"
+	            style="@+style/style_buttons"
+	            android:layout_weight="0.25"
+	            android:text="甩货"
+	            android:textColor="@+color/black" />
+			<Button
+		            android:id="@+id/button3"
+		            android:layout_width="0dp"
+		            android:layout_height="fill_parent"
+		            android:background="@null"
+		            android:layout_weight="0.15"
+		            android:text="清仓"
+		            android:textColor="@+color/black" />
+	        <Button 
+	            android:id="@+id/button_arrow"
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:layout_weight="0.1"
+	            android:background="@drawable/arrow"
+	            />
+	    </LinearLayout>
+	
+	    <ImageView
+	        android:id="@+id/imageview_topRoller"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="matrix"
+	        android:src="@+drawable/roller" />
+    	<com.haitaocheng.widget.ControlScrollViewPager
+            android:id="@+id/viewpager_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+</LinearLayout>

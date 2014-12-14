@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <ImageButton
+            android:id="@+id/button_ShoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5.0dip"
+            android:background="@+drawable/cart" />
+
+        <ImageButton
+            android:id="@+id/button_Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@+drawable/menu" />
+
+        <EditText
+            android:id="@+id/EditText_Search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginRight="50.0dip"
+            android:background="@+drawable/shape_edittext_border"
+            android:drawableLeft="@+drawable/search"
+            android:hint="搜索商品" />
+    </RelativeLayout>
+
+    <com.haitaocheng.widget.ControlScrollViewPager
+            android:id="@+id/viewpager_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_marginTop="40dp"
+            />
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical"
+	    >
+	     <ImageView
+            android:id="@+id/imageview_bottomRoller"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@+drawable/roller" 
+            android:layout_alignTop="@+id/layout_bottomTap"
+            />
+
+        <LinearLayout 
+            android:id="@+id/layout_bottomTap"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+             >
+
+            <Button
+                android:id="@+id/button_DiscountInfo"
+                style="@+style/style_buttons"
+                android:layout_weight="1.0"
+                android:text="优惠信息"
+                android:textColor="@color/yellow"
+                />
+
+            <Button
+                android:id="@+id/button_platform_recommend"
+                style="@+style/style_buttons"
+                android:layout_weight="1.0"
+                android:text="平台推荐"
+               	/>
+
+            <Button
+                android:id="@+id/button_logistics"
+                style="@+style/style_buttons"
+                android:layout_weight="1.0"
+                android:text="转运物流"
+                 />
+            <Button
+                android:id="@+id/button_find"
+                style="@+style/style_buttons"
+                android:layout_weight="1.0"
+                android:text="发现"
+                 />
+            
+        </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>
